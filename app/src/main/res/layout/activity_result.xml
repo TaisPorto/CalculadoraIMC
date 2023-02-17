@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    tools:context=".ResultActivity">
+
+
+    <TextView
+        android:id="@+id/textview_classificacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:text="Seu IMC é "
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textview_result"
+        android:layout_marginTop="20dp"
+        android:layout_width="401dp"
+        android:layout_height="76dp"
+        android:textAlignment="center"
+        android:textSize="38dp"
+        android:textColor="@color/black"
+        tools:text="27.104" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=" TABELA IMC"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="242dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/escalaimc"/>
+
+
+
+</LinearLayout>
