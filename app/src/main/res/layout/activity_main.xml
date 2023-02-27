@@ -19,26 +19,25 @@
 
     <EditText
         android:id="@+id/edittext_peso"
-        android:layout_width="201dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="350dp"
+        android:layout_width="254dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="250dp"
         android:hint="Peso:"
         android:inputType="numberDecimal"
         android:maxLength="6"
-        android:textColor="@color/purple_200"
-        android:textStyle="bold"/>
+        android:textColor="@color/purple_700"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/edittext_altura"
-        android:layout_width="202dp"
-        android:layout_height="wrap_content"
+        android:layout_width="251dp"
+        android:layout_height="74dp"
         android:layout_below="@id/edittext_peso"
         android:layout_marginTop="29dp"
         android:hint="Altura:"
         android:inputType="numberDecimal"
         android:maxLength="6"
-        android:minHeight="48dp"
-        android:textColor="@color/purple_200"
+        android:textColor="@color/purple_700"
         android:textStyle="bold" />
 
     <Button
@@ -47,7 +46,7 @@
         android:layout_height="83dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="40dp"
         android:text="CALCULAR" />
 
 </RelativeLayout>

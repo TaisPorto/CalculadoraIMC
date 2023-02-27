@@ -6,11 +6,14 @@ import android.view.MenuItem
 import android.widget.TextView
 
 
+
 class ResultActivity :AppCompatActivity() {
 
         override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+
+        //Botao de voltar
 
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -31,16 +34,36 @@ class ResultActivity :AppCompatActivity() {
     MAIOR QUE  40,0      OBESIDADE GRAVE III
     */
                 var classificao = ""
+
                 if (result < 18.5f) {
+
         classificao = "ABAIXO DO PESO"
+        tvClassificacao.setTextColor ( resources.getColor(R.color.blue_200))
+        tvResult.setTextColor ( resources.getColor(R.color.blue_200))
+
         } else if (result >= 18.5f && result <= 24.9f) {
+
         classificao = "NORMAL"
+        tvClassificacao.setTextColor( resources.getColor(R.color.green))
+        tvResult.setTextColor ( resources.getColor(R.color.green))
+
         } else if (result >= 25f && result <= 29.9f) {
+
         classificao = "SOBREPESO"
+        tvClassificacao.setTextColor(resources.getColor(R.color.yellow))
+        tvResult.setTextColor ( resources.getColor(R.color.yellow))
+
         } else if (result >= 30f && result <= 39.9f) {
+
         classificao = "OBESIDADE"
+        tvClassificacao.setTextColor(resources.getColor(R.color.orange))
+        tvResult.setTextColor ( resources.getColor(R.color.orange))
+
         } else{
+
         classificao = "OBESIDADE MÓRBIDA"
+        tvClassificacao.setTextColor(resources.getColor(R.color.red))
+        tvResult.setTextColor ( resources.getColor(R.color.red))
         }
 
 
@@ -48,11 +71,22 @@ class ResultActivity :AppCompatActivity() {
 
         }
 
+        //Ação de Retornar ao cliclar no botão
         override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        finish()
-        return super.onOptionsItemSelected(item)
+                finish()
+
+
+       return super.onOptionsItemSelected(item)
+
+
+                }
+
         }
-        }
+
+
+
+
+
 
 
 

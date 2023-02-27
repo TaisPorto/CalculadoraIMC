@@ -9,9 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onResume() {
+        super.onResume()
         setContentView(R.layout.activity_main)
+
 
 
         val btnCalcular: Button = findViewById(R.id.btnCalcular)
@@ -19,10 +20,13 @@ class MainActivity : AppCompatActivity() {
         val edtAltura: EditText = findViewById(R.id.edittext_altura)
 
 
+
+
         btnCalcular.setOnClickListener {
 
             val alturaStr = edtAltura.text.toString()
             val pesoStr = edtPeso.text.toString()
+
 
             if(alturaStr.isNotEmpty() && pesoStr.isNotEmpty()) {
 
@@ -44,10 +48,20 @@ class MainActivity : AppCompatActivity() {
 
                 //Aqui eu inicializo minha intent
                 startActivity(intent)
+
             } else {
                 Toast.makeText(this, "Preencher todos campos", Toast.LENGTH_LONG).show()
             }
+
+            }
         }
 
-    }
-}
+
+      }
+
+
+
+
+
+
+
