@@ -7,7 +7,11 @@ Calculadora de IMC foi um aplicativo que desenvolvi para dar meus primeiros pass
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-app/src/main/res/result
+
+<img src="result/imagem.1.png" alt="Descrição da imagem" width="180">&emsp;
+<img src="result/imagem.2.png" alt="Descrição da imagem" width="180">&emsp;
+<img src="result/imagem.3.png" alt="Descrição da imagem" width="180">
+
 
 
 ## Tecnologias
